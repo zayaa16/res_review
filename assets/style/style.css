@@ -1,0 +1,15 @@
+@import url('variables.css');
+
+body {
+    font-family: var(--body-text-xs-font-normal-family);
+    font-size: var(--body-text-xs-font-normal-size);
+    font-weight: var(--body-text-xs-font-normal-weight);
+    font-style: var(--body-text-xs-font-normal-style);
+}
+
+h1 {
+    font-family: var(--body-text-xs-font-normal-family);
+    font-size: var(--body-text-xs-font-normal-size);
+    font-weight: var(--body-text-xs-font-normal-weight);
+    font-style: var(--body-text-xs-font-normal-style);
+}
