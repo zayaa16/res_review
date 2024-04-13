@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hellooooo</title>
-    <Table></Table>
+    <link rel="stylesheet" href="../../assets/style/login.css" type="text/css" >
+    <link rel="stylesheet" href="../../assets/style/style.css">
 </head>
 
-<body>
-    <header>
+
+    <!-- <header>
         <ul>
             <a href="index.html" class="home">Нүүр</a>
             <a href="restaurants.html" class="restaurants">Ресторан</a>
@@ -32,24 +33,34 @@
         <p> Танд хаяг байхгүй юу?
             <a href="signup.html"><i>Бүртгүүлэх</i></a>
         </p>
-    </section>
-    <footer>
-        <h2>a creative active in mongolia</h2>
-        <section>
-            <h3>contact us </h3>
-            <p>+976 85870116</p>
-            <p>ankhzayadorjbat@gmail.com</p>
-            <p>Улаанбаатар хот</p>
-        </section>
-        <section>
-            <h3>follow us </h3>
-            <a>
-                <link rel="stylesheet" href="">
-            </a>
-
-        </section>
-    </footer>
-
-</body>
-
+    </section> -->
+    <body>
+        <main class="login-container">
+            
+                <input id="tab1" type="radio" name="tabs" class="tab" checked>
+                <label for="tab1" class="tab-button">Login</label>
+        
+                <input id="tab2" type="radio" name="tabs" class="tab">
+                <label for="tab2" class="tab-button">Sign up</label>
+            
+            
+            <form class="login-form" id="content1">
+                <h2>Welcome Back!</h2>
+                <fieldset>
+                    <label for="email">Хэрэглэгчийн нэр:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="password">Нууц үг:</label>
+                    <input type="password" id="password" name="password" required>
+                </fieldset>
+                <fieldset class="checkbox-field">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Намайг сана</label>
+                </fieldset>
+                <button type="submit">Нэвтрэx</button>
+            </form>
+        </main>
+    </body>
+    
 </html>

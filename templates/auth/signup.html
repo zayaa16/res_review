@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hellooooo</title>
+    <link rel="stylesheet" href="../../assets/style/signup.css">
+    <link rel="stylesheet" href="../../assets/style/style.css">
     <Table></Table>
 </head>
-<body>
-    <header>
-                    <ul>
-                         <a href="index.html" class="home">Нүүр</a>
-                         <a href="restaurants.html" class="restaurants">Ресторан</a>
-                         <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
-                         <input type="text" id="search">
-                         <button>Нэвтрэх</button>
-                    </ul>
-    </header>
+<!-- <body>
     <section>
         <h2>Бүртгүүлэх</h2> 
         <p>
@@ -38,22 +31,41 @@
         <p> Танд хаяг байгаа юу?
            <a href="login.html"><i>Нэвтрэх</i></a> 
         </p>
-    </section>
-    <footer>
-        <h2>a creative active in mongolia</h2>
-        <section>
-        <h3>contact us </h3>
-        <p>+976 85870116</p>
-        <p>ankhzayadorjbat@gmail.com</p>
-        <p>Улаанбаатар хот</p>
-    </section>
-    <section>
-        <h3>follow us </h3>
-        <a><link rel="stylesheet" href=""></a>
-        
-    </section>
-    </footer>
-    
+    </section> 
+</body> -->
+
+<body>
+    <main class="signup-container">
+        <form class="signup-form">
+            <h2>Welcome!</h2>
+            <fieldset>
+                <label for="name">Нэр:</label>
+                <input type="name" id="name" name="name" required>
+            </fieldset>
+            <fieldset>
+                <label for="email">И-мэйл хаяг:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <label for="password">Нууц үг:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <fieldset>
+                <label for="password">Нууц үг давтана уу:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <fieldset class="checkbox-field">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Намайг сана</label>
+            </fieldset>
+            <button type="submit">Бүртгүүлэх</button>
+            <section class="links">
+                <p> Бүртгэлтэй хаяг бий юу?
+                    <a href="./login.html">Нэвтрэх</a>
+                </p>
+            </section>
+        </form>
+    </main>
 </body>
 </html>
 

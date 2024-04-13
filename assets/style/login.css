@@ -1,0 +1,121 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    
+    width: 25rem;
+    background: white;
+    padding: 3rem 0;
+    border-radius: 8px;
+    border: 2px solid #C91747;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    border: none;
+    
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+
+.tab {
+    display: none;
+}
+
+.tab-button {
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+
+.tab-button:hover {
+    background-color: #C91747;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab:checked + .tab-button {
+    background-color: #C91747;
+    color: white;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+    display: block;
+}
+
+.login-form,
+.signup-form {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Align with tabs */
+}
+
+
+button {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    background-color: #C91747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-content: center;
+}
+
+button:hover {
+    background-color: white;
+    color: #C91747;
+    border-radius: 1px solid #C91747;
+    
+}
+
+
