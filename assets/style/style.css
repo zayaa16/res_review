@@ -1,7 +1,49 @@
 @import url('variables.css');
 
+
+/* css for res_review */
+/* 
+1. Navbar
+2. Banner
+3. ... 
+*/
+
+/* Desktop fixed 1172px grid */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: var(--desktop-fixed-1172px-size);
+    /* max-width: 100%; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(var(--desktop-fixed-1172px-columns), 1fr);
+    /* grid-gap: var(--desktop-fixed-1172px-gutter); */
+    grid-gap: 10px;
+}
+
+/* Mobile grid */
+@media screen and (max-width: 767px) {
+    .container {
+        grid-template-columns: repeat(var(--mobile-columns), 1fr);
+        grid-gap: var(--mobile-gutter);
+    }
+}
+
+/* Desktop full screen grid */
+@media screen and (min-width: 1173px) {
+    .container {
+        grid-template-columns: repeat(var(--desktop-full-screen-columns), 1fr);
+        grid-gap: var(--desktop-full-screen-gutter);
+    }
+}
+
+
 body {
-    font-family: var(--body-text-xs-font-normal-family);
+    font-family: var(--desktop-headline-h1-text-5xl-family);
     font-size: var(--body-text-xs-font-normal-size);
     font-weight: var(--body-text-xs-font-normal-weight);
     font-style: var(--body-text-xs-font-normal-style);
@@ -12,4 +54,81 @@ h1 {
     font-size: var(--body-text-xs-font-normal-size);
     font-weight: var(--body-text-xs-font-normal-weight);
     font-style: var(--body-text-xs-font-normal-style);
+}
+
+
+/* Navbar styles */
+header {
+    grid-column: 1 / -1;
+    /* Span all columns */
+    background-color: var(--neutral-100);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+
+header a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header svg {
+    max-height: 3px;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    /* Adjust as per your design */
+    border-radius: 5px;
+}
+
+header button {
+    padding: 8px 15px;
+    background-color: var(--status-rose-600);
+    /* Adjust as per your design */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #45a049;
+    /* Adjust as per your design */
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    /* Adjust the position as needed */
+}
+
+.input-with-icon {
+    background: url(../images/search-icon.png) no-repeat scroll 7px 7px;
+    padding-left: 30px;
+    /* Adjust based on icon width */
+}
+
+.banner {
+    grid-column: 1 / -1;
+    /* Span all columns */
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+
 }
