@@ -10,47 +10,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 
 <body>
-    <header>
-        <a href=""><img src="" alt="tasteSpot-logo"></a>
-        <ul>
-            <a href="index.html" class="home">Нүүр</a>
-            <a href="restaurants.html" class="restaurants">Ресторан</a>
-            <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
-            <span>
-                <svg></svg>
-            </span>
-            <input type="text" name="" id="">
-            <a href="/templates/auth/login.html" class="newtreh"> <button>Нэвтрэх</button></a>
-        </ul>
-    </header>
-
     <div class="container">
         <header>
-            <a href=""><img src="../assets/images/logo.png" alt="tasteSpot-logo"></a>
-            <ul>
-                <a href="index.html" class="home">Нүүр</a>
-                <a href="restaurants.html" class="restaurants">Ресторан</a>
-                <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
-                <input type="text" class="input-with-icon" placeholder="        Хайх ...">
+            <nav class="nav-container">
+                <a href=""><img src="../assets/images/logo.png" alt="tasteSpot-logo"></a>
+            </nav>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="restaurants.html" class="restaurants">Ресторан</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text" class="input-with-icon" placeholder="        Хайх ...">
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="newtreh"> <button>Нэвтрэх</button></a>
+                    </li>
+                </ul>
 
-                <a href="login.html" class="newtreh"> <button>Нэвтрэх</button></a>
-            </ul>
-        </header>
+                <div class="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
 
-    <section class="banner">
-        <img src="/assets/images/cover.png" alt="">
-    </section>
+                <div class="nav-actions">
+                    <i class="ri-search-line nav-search"></i>
 
-                <a href="login.html" class="newtreh"> <button>Нэвтрэх</button></a>
-            </ul>
+                    <i class="ri-user-line nav-login"></i>
+
+                    <div class="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+
+            </div>
         </header>
 
         <section class="banner">
             <img src="../assets/images/cover.png" alt="">
         </section>
+
 
         <!-- <section class="foodOfTheDay">
             <h2>Онцлох хоол</h2>
