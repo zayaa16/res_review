@@ -22,7 +22,9 @@
     display: grid;
     grid-template-columns: repeat(var(--desktop-fixed-1172px-columns), 1fr);
     /* grid-gap: var(--desktop-fixed-1172px-gutter); */
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
+    padding: 0;
+    
     
 }
 
@@ -38,7 +40,7 @@
 @media screen and (min-width: 1173px) {
     .container {
         grid-template-columns: repeat(var(--desktop-full-screen-columns), 1fr);
-        grid-gap: var(--desktop-full-screen-gutter);
+        /* grid-gap: var(--desktop-full-screen-gutter); */
     }
 }
 
@@ -149,7 +151,7 @@ header button:hover {
 .banner {
     grid-column: 1/-1;
     /* Span all columns */
-    
+    display: grid;
     object-fit: cover;
     object-position: center;
     
