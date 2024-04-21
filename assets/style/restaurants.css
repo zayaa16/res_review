@@ -3,6 +3,7 @@
     grid-column: 1/-1;
     padding: 10px;
     gap: 10px;
+    
 
 }
 
@@ -11,12 +12,18 @@
     border-radius: 5px;
     width: 373.33px;
     height: 425px;
+    /* display: grid; */
+    flex: 0 0 auto;
+    
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    padding: 10px;
 }
 
 .restaurantOfTheDay h2 {
