@@ -23,7 +23,7 @@ services:
     ports:
       - "8001:8000"
 
-networks:
-  default:
-    external:
-      name: proxynetwork
+# networks:
+#   default:
+#     external:
+#       name: proxynetwork
