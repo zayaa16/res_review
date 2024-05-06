@@ -1,0 +1,29 @@
+version: '3'
+  
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - PGPORT=7001
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=res_review2020@
+    ports:
+      - "7001:5432"
+  web:
+    container_name: res_review
+    restart: always
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    environment:
+      - VIRTUAL_HOST=www.resreview.mn
+    volumes:
+      - .:/code
+    ports:
+      - "8001:8000"
+
+networks:
+  default:
+    external:
+      name: proxynetwork

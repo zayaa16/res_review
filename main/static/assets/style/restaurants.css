@@ -1,0 +1,157 @@
+.restaurantOfTheDay {
+    display: grid;
+    grid-column: 1/-1;
+    padding: 10px;
+    gap: 10px;
+    
+
+}
+
+.restaurant-card {
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
+    border-radius: 5px;
+    width: 373.33px;
+    height: 425px;
+    /* display: grid; */
+    flex: 0 0 auto;
+    
+}
+
+.card-container {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.restaurantOfTheDay h2 {
+    color: var(--status-rose-600);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    size: 24px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.card-title {
+    display: flex;
+    flex: 1;
+    margin: 0 0 10px;
+    font-family: var(--body-text-xs-font-semibold-family);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    text-align: left;
+
+
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+
+
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+    padding: 0 5px;
+
+
+}
+
+.card-rating {
+    grid: 2;
+    display: flex;
+    align-items: center;
+    color: #89929E;
+    size: 14px;
+    padding-left: 90px;
+     
+
+}
+.star{
+    width: 14px;
+    height: 14px;
+    background-image: url(../../assets/images/star-icon.png);
+    background-size: cover;
+    margin-right: 5px;
+}
+
+
+.status {
+    grid: 1;
+    display: flex;
+    
+}
+.open{
+    grid: 1;
+    color: green;
+    margin-right: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.close-status{
+    font-weight: bold;
+    font-size: 14px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    grid: 1;
+}
+
+.card-text {
+    color: black;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.heart-btn {
+    display: grid;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    width: 16.87px;
+    height: 14.96px;
+    bottom: 5.04px;
+    /* top: 5.04px; */
+    /* left: 3.56px; */
+    gap: 0px;
+    background-image: url(../../assets/images/heart-outline.png);
+    background-size: cover;
+}
+
+.heart-btn.liked {
+    background-image: url(../../assets/images/heart-filled.png);
+}
+
+
+.btn-primary {
+    width: 129px;
+    height: 44px;
+    text-align: center;
+    color: var(--status-rose-600);
+    border-radius: 5px;
+    border-color: var(--status-rose-600);
+    background: none;
+    padding: 10px, 16px, 10px, 16px;
+    font-size: 14px;
+    margin-top: 20px;
+    align-items: center;
+}
