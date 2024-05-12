@@ -1,151 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+{%extends 'base.html'%}
+{%load static%}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hellooooo</title>
-    <link rel="stylesheet" href="../assets/style/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-</head>
+{%block title%}Нүүр{%endblock title%}
 
-<body>
-    <!-- <header>
-        <a href=""><img src="" alt="tasteSpot-logo"></a>
-        <ul>
-            <a href="index.html" class="home">Нүүр</a>
-            <a href="restaurants.html" class="restaurants">Ресторан</a>
-            <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
-            <span>
-                <svg></svg>
-            </span>
-            <input type="text" name="" id="">
-            <a href="/templates/auth/login.html" class="newtreh"> <button>Нэвтрэх</button></a>
-        </ul>
-    </header> -->
+{%block style%}
+{%endblock style%}
 
-    <div class="container">
-        <header>
-            <nav class="nav-container">
-                <a href=""><img src="../assets/images/logo.png" alt="tasteSpot-logo"></a>
-            </nav>
-            <div class="nav-menu">
-                <ul>
-                    <li class="nav-item">
-                        <a href="restaurants.html" class="restaurants">Ресторан</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
-                    </li>
-                    <li class="nav-item">
-                        <input type="text" class="input-with-icon" placeholder="        Хайх ...">
-                    </li>
-                    <li class="nav-item">
-                        <a href="login.html" class="newtreh"> <button>Нэвтрэх</button></a>
-                    </li>
-                </ul>
 
-                <div class="nav-close">
-                    <i class="ri-close-large-line"></i>
+{%block script%}
+{%endblock script%}
+
+
+
+{%block content%}
+ 
+
+<main class="main">
+    <img src="{%static 'assets/images/cover.png'%}" alt="image" class="main__bg">
+ </main>
+
+<section class="foodOfTheDay">
+    <h2>Онцлох хоол</h2>
+
+    <div class="carda">
+        <div class="card">
+            <img src="{%static 'assets/images/Frame 5-2.png'%}" alt="Cafe Food" class="card-image">
+            <div class="card-content">
+                <h1>Cafe 5005</h1>
+                <p class="info">800 meters away • Cafe & Bar</p>
+                <div class="rating">
+                    <span class="stars">★ 3.0</span>
+                    <span class="reviews">(186)</span>
                 </div>
-
-                <div class="nav-actions">
-                    <i class="ri-search-line nav-search"></i>
-
-                    <i class="ri-user-line nav-login"></i>
-
-                    <div class="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div>
-
+                <button class="favourite">
+                    ♡
+                </button>
             </div>
-        </header>
-
-        <section class="banner">
-            <img src="../assets/images/cover.png" alt="">
-        </section>
-
-
-        <!-- <section class="foodOfTheDay">
-            <h2>Онцлох хоол</h2>
-
-            <div class="food-card">
-                <img src="" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">Ulaanbaatar: Silk Road restaurant</h5>
-                    <button><img src="" alt=""></button>
-                    <p class="card-text">800 meters away Cafe and Bar</p>
-                    <p class="card-text">3.0 (165)</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <button type="button">Бүх хоол үзэх...</button>
-        </section>
-
-
-        <section class="restaurantOfTheDay">
-            <h2>Онцлох ресторан</h2>
-
-            <div class="restaurant-card">
-                <img src="" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">Ulaanbaatar: Silk Road restaurant</h5>
-                    <button><img src="" alt=""></button>
-                    <p class="card-text">open closes 11pm</p>
-                    <p class="card-text">3.0 (165)</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <button type="button">Бүх ресторан үзэх...</button>
-        </section>
-
-        <section class="reviewOfTheDay">
-            <h2>Онцлох сэтгэгдэл</h2>
-
-            <div class="review-card">
-                <img src="" class="card-img-top" alt="">
-                <p>Shinee Zaya</p>
-                <div class="card-body">
-                    <h2 class="card-title">Special Spaghetti</h2>
-                    <h5 class="card-title">Cante caffe</h5>
-                    <img src="" alt="">
-                    <p class="card-text">3.0 (165)</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-
-            <button type="button">Бүх сэтгэгдэл үзэх...</button>
-        </section> -->
-        <footer class="footer">
-            <h2>A creative team in Mongolia</h2>
-            <section class="contact-info">
-              <p>Contact us:</p>
-              <p><span class="icon">📍</span>Ulaanbaatar, Mongolia</p>
-              <p><span class="icon">📞</span>+976 99990099</p>
-              <address><span class="icon">✉️</span>twinflames@gmail.com</address>
-              <address><span class="icon">🌐</span>twinflames.mn</address>
-            </section>
-            <section class="social-media">
-              <p>Follow us:</p>
-              <a href="https://facebook.com" class="social-icon">f</a>
-              <a href="https://instagram.com" class="social-icon">i</a>
-              <a href="https://twitter.com" class="social-icon">x</a>
-            </section>
-          </footer>
-        
-
+        </div>
     </div>
     
+    <div class="carda">
+        <div class="card">
+            <img src="{%static 'assets/images/Frame 5-2.png'%}" alt="Cafe Food" class="card-image">
+            <div class="card-content">
+                <h1>Cafe 5005</h1>
+                <p class="info">800 meters away • Cafe & Bar</p>
+                <div class="rating">
+                    <span class="stars">★ 3.0</span>
+                    <span class="reviews">(186)</span>
+                </div>
+                <button class="favourite">
+                    ♡
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carda">
+        <div class="card">
+            <img src="{%static 'assets/images/Frame 5-2.png'%}" alt="Cafe Food" class="card-image">
+            <div class="card-content">
+                <h1>Cafe 5005</h1>
+                <p class="info">800 meters away • Cafe & Bar</p>
+                <div class="rating">
+                    <span class="stars">★ 3.0</span>
+                    <span class="reviews">(186)</span>
+                </div>
+                <button class="favourite">
+                    ♡
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <button type="button">Бүх хоол үзэх...</button>
+</section> 
 
-</body>
 
 
 
-</html>
+
+<!-- 
+<section class="restaurantOfTheDay">
+    <h2>Онцлох ресторан</h2>
+
+    <div class="restaurant-card">
+        <img src="" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Ulaanbaatar: Silk Road restaurant</h5>
+            <button><img src="" alt=""></button>
+            <p class="card-text">open closes 11pm</p>
+            <p class="card-text">3.0 (165)</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <button type="button">Бүх ресторан үзэх...</button>
+</section>
+
+<section class="reviewOfTheDay">
+    <h2>Онцлох сэтгэгдэл</h2>
+
+    <div class="review-card">
+        <img src="" class="card-img-top" alt="">
+        <p>Shinee Zaya</p>
+        <div class="card-body">
+            <h2 class="card-title">Special Spaghetti</h2>
+            <h5 class="card-title">Cante caffe</h5>
+            <img src="" alt="">
+            <p class="card-text">3.0 (165)</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
+    <button type="button">Бүх сэтгэгдэл үзэх...</button>
+</section> -->
+
+{%endblock content%}
