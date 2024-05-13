@@ -201,4 +201,8 @@
     --desktop-full-screen-columns: 12;
     --desktop-full-screen-gutter: 28px;
     --desktop-full-screen-gutter-rem: 1.75rem;
+
+    --header-height: 3.5rem;
+    --z-fixed: 100;
+    --z-modal: 1000;
   }
