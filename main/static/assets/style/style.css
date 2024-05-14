@@ -395,11 +395,6 @@ img {
   }
 }
 
-.carda {
-  grid-column: 3 / span 10;
-  margin: 0 auto; /* Centering the element horizontally */
-  display: grid;
-}
 .card {
   width: 300px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -539,4 +534,10 @@ address {
   .social-media {
     margin-top: 20px;
   }
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 3/-1; 
 }
