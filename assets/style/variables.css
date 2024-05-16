@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
     /* TYPE */
-    --body-text-xs-font-normal-family: "Inter";
+    --body-text-xs-font-normal-family: "Inter", sans-serif;;
     --body-text-xs-font-normal-size: 12px;
     --body-text-xs-font-normal-size-rem: 0.75rem;
     --body-text-xs-font-normal-weight: 400;

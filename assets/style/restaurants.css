@@ -1,10 +1,7 @@
 .restaurantOfTheDay {
     display: grid;
-    grid-column: 1/-1;
     padding: 10px;
     gap: 10px;
-    
-
 }
 
 .restaurant-card {
@@ -18,11 +15,10 @@
 }
 
 .card-container {
-    display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns: auto auto auto;  
     gap: 10px;
     scroll-behavior: smooth;
-    overflow-x: auto;
     padding: 10px;
 }
 
