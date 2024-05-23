@@ -1,6 +1,6 @@
 .restaurantOfTheDay {
     display: grid;
-    padding: 10px;
+    padding-top: 6rem;
     gap: 10px;
 }
 

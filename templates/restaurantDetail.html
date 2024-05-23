@@ -4,65 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hellooooo</title>
+    <title>#Res name# - Restaurant review</title>
     <link rel="stylesheet" href="../assets/style/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <link rel="stylesheet" href="../assets/style/resDetail.css">
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 
-<div class="container">
-    <header>
-        <nav class="nav-container">
-            <a href="index.html"><img src="../assets/images/logo.png" alt="tasteSpot-logo"></a>
-        
-        <div class="nav-menu">
-            <ul>
-                <li class="nav-item">
-                    <a href="restaurants.html" class="restaurants">Ресторан</a>
-                </li>
-                <li class="nav-item">
-                    <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
-                </li>
-                <li class="nav-item">
-                    <input type="text" class="input-with-icon" placeholder="        Хайх ...">
-                </li>
-                <li class="nav-item">
-                    <a href="login.html" class="newtreh"> <button>Нэвтрэх</button></a>
-                </li>
-            </ul>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../assets/images/logo.png">
+            </a>
 
-            
-        </div>
-    </nav>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Нүүр</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./restaurants.html" class="nav__link">Ресторан</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Хоол</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./aboutUs.html" class="nav__link">Бидний тухай</a>
+                    </li>
+
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- <section class="banner">
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="Та хайж буй зүйлээ бичнэ үү?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Тавтай морилно уу !</h2>
+
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Имэйл</label>
+                    <input type="email" placeholder="Имэйлээ бичнэ үү" id="email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="password" class="login__label">Нууц үг</label>
+                    <input type="password" placeholder="Нууц үгээ бичнэ үү" id="password" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <!-- <p class="login__signup">
+                You do not have an account? <a href="#">Sign up</a>
+            </p> -->
+
+                <a href="#" class="login__forgot">
+                    Нууц үгээ мартсан уу?
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!--==================== CONTAINER ====================-->
+    <div class="container">
+        <!-- <section class="banner">
         <img src="../assets/images/cover.png" alt="">
     </section> -->
-    <section class="area-center">
-        <img class="img-center" src="../assets/images/cover.png" alt="" >
-        <div class="content">
-            <div class="info">
-                <p class="top-left">Онцлог үзүүлэлт: Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
-                <p class="top-left-below">Үйлчилгээ: VIP өрөө, хуралтай, суух үйлчилгүүлэх үзүүлэлт</p>
+        <section class="area-center">
+            <img class="img-center" src="../assets/images/cover.png" alt="">
+            <div class="content">
+                <div class="info">
+                    <p class="top-left">Онцлог үзүүлэлт: Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+                    <p class="top-left-below">Үйлчилгээ: VIP өрөө, хуралтай, суух үйлчилгүүлэх үзүүлэлт</p>
+                </div>
+
+                <h2 class="title">Hulan's meat restaurant</h2>
+                <p class="text-center">
+                    hot pot japan
+                </p>
             </div>
-            
-            <h2 class="title">Hulan's meat restaurant</h2>
-            <p class="text-center">
-            hot pot japan
-            </p>
-        </div>
-        
-        
-        
-        
-        <!-- <div class="overlay-text">
+
+
+
+
+            <!-- <div class="overlay-text">
              <img class="img-center" src="../assets/images/cover.png" alt="" >
             <p class="top-left">Онцлог үзүүлэлт: Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
             <p class="top-left-below">Үйлчилгээ: VIP өрөө, хуралтай, суух үйлчилгүүлэх үзүүлэлт</p>
@@ -70,88 +133,85 @@
             <p class="subtitle">hot pot japan</p>
            
         </div> -->
-    </section>
-
-    <section class="menu">
-        <article class="menu-item">
-            <img src="../assets/images/Frame 5-1.png" alt="New York Cheesecake">
-            <h2>New York Cheesecake</h2>
-            <p>⭐⭐⭐⭐</p>
-        </article>
-        <article class="menu-item">
-            <img src="../assets/images/Frame 5-2.png" alt="Monster Burger">
-            <h2>Monster Burger</h2>
-            <p>⭐⭐⭐⭐⭐</p>
-        </article>
-        <article class="menu-item">
-            <img src="../assets/images/Frame 5-5.png" alt="Strawberry Mini Cake">
-            <h2>Strawberry Mini Cake</h2>
-            <p>⭐⭐⭐⭐</p>
-        </article>
-    </section>
-
-    <section class="res-about-container">
-        <div class="image-grid">
-            <div class="column-1">
-                <img src="../assets/images/about-res-1.jpeg" alt="Street Cafe">
-                <img src="../assets/images/about-res-1.jpeg" alt="Gourmet Salad">
-            </div>
-            <div class="column-2">
-                <img src="../assets/images/about-res-1.jpeg" alt="Street Cafe">
-                <img src="../assets/images/about-res-1.jpeg" alt="Gourmet Salad">
-            </div>
-            
-        </div>
-        <div class="text-section">
-            <h1>Рестораны Тухай</h1>
-            <p>Энэхүү хоолны газар нь Монгол улсын анхдагч 300гийн газруудын нэг
-                 ба 2003 онд байгуулагдсан 20 жилийн түүхтэй газар юм. 
-                 Одоогоор еврсдийн 20 гаруй салбарыг монгол дахар нээсэн ба 
-                 хэвчлэн монгол ундасны хоолоор үйлчлүүлэгчдээ үйлчилдэг билээ.</p>
-        </div>
-    </section>
-    <section class="detail-container">
-        <div class="details">
-            <h2>Details</h2>
-            <p><strong>Address:</strong> Vegetarian Friendly, Vegan Options, Gluten Free Option Жуулчны гудамж, Ulaanbaatar.</p>
-            <h3>Social Links</h3>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p><strong>Phone number:</strong> +976 99887799</p>
-        </div>
-        <div class="hours">
-            <h2>Hours:</h2>
-            <p>Friday: 7 AM–12 AM</p>
-            <p>Monday: 7 AM–12 AM</p>
-            <p>Tuesday: 7 AM–12 AM</p>
-            <p>Wednesday: 7 AM–12 AM</p>
-            <p>Thursday: 7 AM–12 AM</p>
-        </div>
-    </section>
-
-
-    <footer class="footer">
-        <h2>A creative team in Mongolia</h2>
-        <section class="contact-info">
-          <p>Contact us:</p>
-          <p><span class="icon">📍</span>Ulaanbaatar, Mongolia</p>
-          <p><span class="icon">📞</span>+976 99990099</p>
-          <address><span class="icon">✉️</span>twinflames@gmail.com</address>
-          <address><span class="icon">🌐</span>twinflames.mn</address>
         </section>
-        <section class="social-media">
-          <p>Follow us:</p>
-          <a href="https://facebook.com" class="social-icon">f</a>
-          <a href="https://instagram.com" class="social-icon">i</a>
-          <a href="https://twitter.com" class="social-icon">x</a>
+
+        <section class="menu">
+            <article class="menu-item">
+                <img src="../assets/images/Frame 5-1.png" alt="New York Cheesecake">
+                <h2>New York Cheesecake</h2>
+                <p>⭐⭐⭐⭐</p>
+            </article>
+            <article class="menu-item">
+                <img src="../assets/images/Frame 5-2.png" alt="Monster Burger">
+                <h2>Monster Burger</h2>
+                <p>⭐⭐⭐⭐⭐</p>
+            </article>
+            <article class="menu-item">
+                <img src="../assets/images/Frame 5-5.png" alt="Strawberry Mini Cake">
+                <h2>Strawberry Mini Cake</h2>
+                <p>⭐⭐⭐⭐</p>
+            </article>
         </section>
-      </footer>
-    
 
-</div>
+        <section class="res-about-container">
+            <div class="image-grid">
+                <div class="column-1">
+                    <img src="../assets/images/about-res-1.jpeg" alt="Street Cafe">
+                    <img src="../assets/images/about-res-1.jpeg" alt="Gourmet Salad">
+                </div>
+                <div class="column-2">
+                    <img src="../assets/images/about-res-1.jpeg" alt="Street Cafe">
+                    <img src="../assets/images/about-res-1.jpeg" alt="Gourmet Salad">
+                </div>
+
+            </div>
+            <div class="text-section">
+                <h1>Рестораны Тухай</h1>
+                <p>Энэхүү хоолны газар нь Монгол улсын анхдагч 300гийн газруудын нэг
+                    ба 2003 онд байгуулагдсан 20 жилийн түүхтэй газар юм.
+                    Одоогоор еврсдийн 20 гаруй салбарыг монгол дахар нээсэн ба
+                    хэвчлэн монгол ундасны хоолоор үйлчлүүлэгчдээ үйлчилдэг билээ.</p>
+            </div>
+        </section>
+        <section class="detail-container">
+            <div class="details">
+                <h2>Details</h2>
+                <p><strong>Address:</strong> Vegetarian Friendly, Vegan Options, Gluten Free Option Жуулчны гудамж,
+                    Ulaanbaatar.</p>
+                <h3>Social Links</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p><strong>Phone number:</strong> +976 99887799</p>
+            </div>
+            <div class="hours">
+                <h2>Hours:</h2>
+                <p>Friday: 7 AM–12 AM</p>
+                <p>Monday: 7 AM–12 AM</p>
+                <p>Tuesday: 7 AM–12 AM</p>
+                <p>Wednesday: 7 AM–12 AM</p>
+                <p>Thursday: 7 AM–12 AM</p>
+            </div>
+        </section>
 
 
+        <footer class="footer">
+            <h2>A creative team in Mongolia</h2>
+            <section class="contact-info">
+                <p>Contact us:</p>
+                <p><span class="icon">📍</span>Ulaanbaatar, Mongolia</p>
+                <p><span class="icon">📞</span>+976 99990099</p>
+                <address><span class="icon">✉️</span>twinflames@gmail.com</address>
+                <address><span class="icon">🌐</span>twinflames.mn</address>
+            </section>
+            <section class="social-media">
+                <p>Follow us:</p>
+                <a href="https://facebook.com" class="social-icon">f</a>
+                <a href="https://instagram.com" class="social-icon">i</a>
+                <a href="https://twitter.com" class="social-icon">x</a>
+            </section>
+        </footer>
+
+
+    </div>
 </body>
-
-
 </html>

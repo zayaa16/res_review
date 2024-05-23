@@ -4,59 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hellooooo</title>
-    <link rel="stylesheet" href="../assets/style/aboutUs.css" type="text/css">
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>About Us - Restaurant review</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="../assets/style/aboutUs.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 
 <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../assets/images/logo.png">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Нүүр</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./restaurants.html" class="nav__link">Ресторан</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Хоол</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./aboutUs.html" class="nav__link">Бидний тухай</a>
+                    </li>
+
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="Та хайж буй зүйлээ бичнэ үү?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Тавтай морилно уу !</h2>
+
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Имэйл</label>
+                    <input type="email" placeholder="Имэйлээ бичнэ үү" id="email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="password" class="login__label">Нууц үг</label>
+                    <input type="password" placeholder="Нууц үгээ бичнэ үү" id="password" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <!-- <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p> -->
+
+                <a href="#" class="login__forgot">
+                    Нууц үгээ мартсан уу?
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!--==================== CONTAINER ====================-->
     <div class="container">
-        <header>
-            <a href="index.html"><img src="../assets/images/logo.png" alt="tasteSpot-logo"></a>
-            <ul>
-                <a href="index.html" class="home">Нүүр</a>
-                <a href="restaurants.html" class="restaurants">Ресторан</a>
-                <a href="aboutUs.html" class="aboutUs">Бидний тухай</a>
-                <input type="text" class="input-with-icon" placeholder="        Хайх ...">
-
-                <a href="login.html" class="newtreh"> <button>Нэвтрэх</button></a>
-            </ul>
-        </header>
-
         <section class="about-area-center">
+            <img class="about-img-center" src="../assets/images/about_us_cover.jpg" alt="">
             <h2 class="about-title">Бидний түүх</h2>
             <p class="about-text-center">
                 Амттай хоолонд дурлагсадын нэгдэл Hool.hair-д тавтай морилно уу!
                 Манай хуудсаар дамжуулан бүх насны хүмүүс шинэ амт чанарын
                 талаар мэдээллийг олж авна.
             </p>
-            <img class="about-img-center" src="../assets/images/cover.png" alt="" >
 
         </section>
 
         <section class="about-area">
             <div class="about-area-right">
                 <div class="about-text-left">
-                <h2>Бидний тухай</h2>
-                Амттай хоолонд дурлагсадын нэгдэл Hool.hair-д тавтай морилно уу!
-                Манай хуудсаар дамжуулан бүх насны хүмүүс шинэ амт чанарын
-                талаар мэдээллийг олж авна.
+                    <h2>Бидний тухай</h2>
+                    Амттай хоолонд дурлагсадын нэгдэл Hool.hair-д тавтай морилно уу!
+                    Манай хуудсаар дамжуулан бүх насны хүмүүс шинэ амт чанарын
+                    талаар мэдээллийг олж авна.
                 </div>
-                <img class="about-img-left" src="../assets/images/Frame 5-1.png" alt="about 2" width="505" height="377">
+                <img class="about-img-left" src="../assets/images/about_us_2.png" alt="about 2" width="505" height="377">
 
             </div>
             <div class="about-area-left">
-                <img class="about-img-right" src="../assets/images/Frame 5-2.png" alt="about 3" width="504"
+                <img class="about-img-right" src="../assets/images/about_us_1.png" alt="about 3" width="504"
                     height="350">
                 <div class="about-text-right">
-                <h2>Бидний зорилго</h2>
-                Амттай хоолонд дурлагсадын нэгдэл Hool.hair-д тавтай морилно уу!
-                Манай хуудсаар дамжуулан бүх насны хүмүүс шинэ амт чанарын
-                талаар мэдээллийг олж авна.
+                    <h2>Бидний зорилго</h2>
+                    Амттай хоолонд дурлагсадын нэгдэл Hool.hair-д тавтай морилно уу!
+                    Манай хуудсаар дамжуулан бүх насны хүмүүс шинэ амт чанарын
+                    талаар мэдээллийг олж авна.
                 </div>
             </div>
         </section>
@@ -64,37 +143,64 @@
         <section class="about-suggest-text">
             <h2>Бид танд юу санал болгож байгаа вэ?</h2>
             <p>
-                Хүссэн хоолны газраа хайж олох: Бид танд маш олон газруудын мэдээллийг олгох ба та үүний ачаар өөртэйгөө ойрхон газраас хүссэн хоолоо идэх боломжтой болох юм.
-                Хоолны чанарыг мэдэх: Та манай платформыг ашигласнаар хамгийн үнэнчээр тухайн хоолны амт чанар, үнийн мэдээллийг олох боломжтой юм.
-                Үзэл бодлоо илэрхийлэх орчин: Та манай платформ дээр өөрийн үзэл бодлоо чөлөөтэй илэрхийлэх боломжтой юм.
-    
+                Хүссэн хоолны газраа хайж олох: Бид танд маш олон газруудын мэдээллийг олгох ба та үүний ачаар өөртэйгөө
+                ойрхон газраас хүссэн хоолоо идэх боломжтой болох юм.
+                Хоолны чанарыг мэдэх: Та манай платформыг ашигласнаар хамгийн үнэнчээр тухайн хоолны амт чанар, үнийн
+                мэдээллийг олох боломжтой юм.
+                Үзэл бодлоо илэрхийлэх орчин: Та манай платформ дээр өөрийн үзэл бодлоо чөлөөтэй илэрхийлэх боломжтой
+                юм.
+
             </p>
         </section>
-        <!-- <section class="about-ask">
-            <h2>Бид танд юу санал болгож байгаа вэ?</h2>
-            <p>
-                Хүссэн хоолны газраа хайж олох: Бид танд маш олон газруудын мэдээллийг олгох ба та үүний ачаар өөртэйгөө ойрхон газраас хүссэн хоолоо идэх боломжтой болох юм.
-                Хоолны чанарыг мэдэх: Та манай платформыг ашигласнаар хамгийн үнэнчээр тухайн хоолны амт чанар, үнийн мэдээллийг олох боломжтой юм.
-                Үзэл бодлоо илэрхийлэх орчин: Та манай платформ дээр өөрийн үзэл бодлоо чөлөөтэй илэрхийлэх боломжтой юм.
-            </p>
-        </section> -->
+        <section class="faq">
+            <div class="faq-element">
+                <input type="checkbox" id="faq-1">
+                <h1><label for="faq-1">Яаж үнэлгээ өгөх вэ?</label></h1>
+                <div class="p">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+              </div>
+              <div class="faq-element">
+                <input type="checkbox" id="faq-2">
+                <h1><label for="faq-2">Хэрхэн үнэлгээгээ устгах вэ?</label></h1>
+                <div class="p">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+              </div>
+              <div class="faq-element">
+                <input type="checkbox" id="faq-3">
+                <h1><label for="faq-3">Хэрхэн хоолоо олох вэ?</label></h1>
+                <div class="p">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href="">link to article</a>
+                  </p>
+                </div>
+              </div>
+              <div class="faq-element">
+                <input type="checkbox" id="faq-3">
+                <h1><label for="faq-3">Хэрхэн таалагдсан газраа хадгалах вэ?</label></h1>
+                <div class="p">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href="">link to article</a>
+                  </p>
+                </div>
+              </div>
+        </section>
         <footer class="footer">
             <h2>A creative team in Mongolia</h2>
             <section class="contact-info">
-              <p>Contact us:</p>
-              <p><span class="icon">📍</span>Ulaanbaatar, Mongolia</p>
-              <p><span class="icon">📞</span>+976 99990099</p>
-              <address><span class="icon">✉️</span>twinflames@gmail.com</address>
-              <address><span class="icon">🌐</span>twinflames.mn</address>
+                <p>Contact us:</p>
+                <p><span class="icon">📍</span>Ulaanbaatar, Mongolia</p>
+                <p><span class="icon">📞</span>+976 99990099</p>
+                <address><span class="icon">✉️</span>twinflames@gmail.com</address>
+                <address><span class="icon">🌐</span>twinflames.mn</address>
             </section>
             <section class="social-media">
-              <p>Follow us:</p>
-              <a href="https://facebook.com" class="social-icon">f</a>
-              <a href="https://instagram.com" class="social-icon">i</a>
-              <a href="https://twitter.com" class="social-icon">x</a>
+                <p>Follow us:</p>
+                <a href="https://facebook.com" class="social-icon">f</a>
+                <a href="https://instagram.com" class="social-icon">i</a>
+                <a href="https://twitter.com" class="social-icon">x</a>
             </section>
-          </footer>
-        
+        </footer>
+
 
     </div>
 </body>
