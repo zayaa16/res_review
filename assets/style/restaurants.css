@@ -1,6 +1,6 @@
 .restaurantOfTheDay {
     display: grid;
-    padding-top: 6rem;
+    padding-top: 1rem;
     gap: 10px;
 }
 
@@ -117,20 +117,12 @@
 }
 
 .heart-btn {
-    display: grid;
-    border: none;
     background-color: transparent;
     cursor: pointer;
-    outline: none;
-    position: relative;
-    width: 16.87px;
-    height: 14.96px;
-    bottom: 5.04px;
-    /* top: 5.04px; */
-    /* left: 3.56px; */
-    gap: 0px;
-    background-image: url(../../assets/images/heart-outline.png);
-    background-size: cover;
+}
+
+.heart-btn i {
+    font-size: 1.5rem;
 }
 
 .heart-btn.liked {

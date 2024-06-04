@@ -478,3 +478,17 @@ address {
     margin-top: 20px;
   }
 }
+
+
+.foodOfTheDay {
+  display: grid;
+  padding-top: 1rem;
+  gap: 10px;
+}
+
+.foodOfTheDay h2 {
+  color: var(--status-rose-600);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  size: 24px;
+}
